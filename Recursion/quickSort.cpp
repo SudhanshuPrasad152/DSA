@@ -60,8 +60,8 @@ void quickSort(int *arr, int s, int e)
 
 int main()
 {
-    int arr[15] = {3, 2, 1, 6, 7, 0, 9, 10};
-    int n = 8;
+    int arr[30] = {3, 2, 1, 6, 7, 0, 9, 10, 13, 17, 12, 15, 19, 22, 20, 21, 11, 26, 29, 30};
+    int n = 20;
     quickSort(arr, 0, n - 1);
 
     for (int i = 0; i < n; i++)

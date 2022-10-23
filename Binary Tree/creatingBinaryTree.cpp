@@ -158,29 +158,37 @@ void postOrder(node *root)
     cout << root->data << " ";
 }
 
-void morrisTraversal(node* root){
-    if(root == NULL){
+void morrisTraversal(node *root)
+{
+    if (root == NULL)
+    {
         return;
     }
-    node* pre;
-    node* current = root;
-    while(current!= NULL){
-        if(current->left == NULL){
-            cout<<current->data<<" ";
+    node *pre;
+    node *current = root;
+    while (current != NULL)
+    {
+        if (current->left == NULL)
+        {
+            cout << current->data << " ";
             current = current->right;
         }
-        else{
+        else
+        {
             pre = current->left;
-            while(pre->right != NULL && pre->right != current){
+            while (pre->right != NULL && pre->right != current)
+            {
                 pre = pre->right;
             }
-            if(pre->right == NULL){
+            if (pre->right == NULL)
+            {
                 pre->right = current;
                 current = current->left;
             }
-            else{
+            else
+            {
                 pre->right = NULL;
-                cout<<current->data<<" ";
+                cout << current->data << " ";
                 current = current->right;
             }
         }

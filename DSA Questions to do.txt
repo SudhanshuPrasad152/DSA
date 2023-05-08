@@ -1,0 +1,6 @@
+1. Grid Unique Paths all types.
+2. Reverse Pairs
+3. Count Subarrays with Given XOR
+4. Sliding Window Problems
+5. Longest Substring without repeat
+6. Remove Nth Node From End of List
